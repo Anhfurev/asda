@@ -62,6 +62,6 @@ function higherBalance(students, search) {
 let bro = higherBalance(students, 3000);
 console.log("high balance than search students", bro);
 
-function addClassCodeToStudents(students,utga) {name: "boldo",age: 3,grade: 11,gender: "male",balance: 1231,classCode:"3A"}
+function addClassCodeToStudents(students,utga) {students.'utga:23'}
 let resuk = addClassCodeToStudents(students, "{bongo:12}");
 console.log(resuk);
