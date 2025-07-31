@@ -62,6 +62,20 @@ function higherBalance(students, search) {
 let bro = higherBalance(students, 3000);
 console.log("high balance than search students", bro);
 
-function addClassCodeToStudents(students,utga) {students.'utga:23'}
-let resuk = addClassCodeToStudents(students, "{bongo:12}");
+function addClassCodeToStudents(students, target) {
+  let result = students.map((student) => {
+    return {
+      name: student.name,
+      age: student.age,
+      gender: student.gender,
+      balance: student.balance,
+      grade: student.grade,
+      classcode: target,
+    };
+  });
+  return result;
+}
+let g = addClassCodeToStudents(students);
+console.log(g);
+let resuk = addClassCodeToStudents(students, "3a");
 console.log(resuk);
