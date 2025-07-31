@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .card {
+        width: 400px;
+        height: 500px;
+        display: block;
+        margin: 0 auto; /* centers the image horizontally */
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        margin-top: 20px;
+        position: relative;
+        margin-bottom: 20px;
+      }
+      .carName {
+        font-size: 30px;
+        color: black;
+        text-align: center;
+        margin-bottom: 10px;
+        font-family: roboto;
+      }
+      .father {
+        display: flex;
+        flex-wrap: nowrap; /* crucial to prevent wrapping */
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 20px;
+        padding: 10px;
+        max-width: 100vw; /* constrain container width */
+        box-sizing: border-box;
+      }
+      .card {
+        flex-shrink: 0; /* prevent shrinking */
+        width: 400px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .carType {
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        margin-top: 10px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      .carPhoto {
+        width: 300px;
+        height: auto;
+        display: block;
+        margin: 0 auto; /* ✅ correct way to horizontally center a block element */
+      }
+      .carPrice {
+        top: 330px;
+        left: 60px;
+        margin: 0 auto;
+        position: absolute;
+
+        font-size: larger;
+        font-family: roboto;
+      }
+      .carMileage {
+        position: absolute;
+        top: 350px;
+        left: 60px;
+        font-size: larger;
+        margin-top: 10px;
+        font-family: roboto;
+      }
+      .carBrand {
+        position: absolute;
+        top: 380px;
+        left: 60px;
+        font-size: larger;
+        margin-top: 10px;
+        font-family: roboto;
+      }
+      .carYear {
+        position: absolute;
+        top: 410px;
+        left: 60px;
+        font-size: larger;
+        margin-top: 10px;
+        font-family: roboto;
+      }
+      .carPrice,
+      .carMileage,
+      .carBrand,
+      .carYear {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%; /* or desired width */
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #fff;
+        color: #333;
+        line-height: 1.5;
+      }
+
+      /* Navigation styles */
+      nav {
+        background-color: #ff0000;
+        padding: 10px 20px;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+      }
+
+      nav a:hover,
+      nav a:focus {
+        background-color: #e02b2b;
+        outline: none;
+      }
+      .category {
+        margin-left: 20px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="others.html">Search</a>
+      <a href="others.html">Cars</a>
+      <a href="others.html">Help</a>
+      <a href="others.html">Others</a>
+    </nav>
+    <div><h1 class="category">Cars</h1></div>
+    <div class="father" id="cars-id"></div>
+    <div><h1 class="category">Bike</h1></div>
+    <div class="father" id="cars-id1"></div>
+    <div></div>
+    <script src="cars.js"></script>
+  </body>
+</html>
